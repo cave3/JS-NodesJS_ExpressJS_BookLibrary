@@ -1,0 +1,55 @@
+<% include partials/header %>
+
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="panel">
+					<div class="panel-body">
+
+
+
+						<!--/stories-->
+						<div class="row">
+
+							<div class="col-md-5">
+								Sign In
+								<form name="signUpForm" action="/auth/signIn" method="post" class="">
+									User Name: <input type="text" name="userName" id="userName">
+									Password: <input type="password" name="password" id="password">
+									<input type="submit" value="Sign in">
+
+								</form>
+							</div>
+
+							<div class="col-md-5">
+								Sign Up
+								<form name="signUpForm" action="/auth/signUp" method="post" class="">
+									User Name: <input type="text" name="userName" id="userName">
+									Password: <input type="password" name="password" id="password">
+									<input type="submit" value="Sign up">
+								</form>
+							</div>
+						</div>
+						<hr>
+
+						<!--/stories-->
+
+
+						<a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+
+
+					</div>
+				</div>
+
+
+
+			</div>
+			<!--/col-12-->
+		</div>
+	</div>
+
+
+	<% include partials/footer %>
